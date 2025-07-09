@@ -56,7 +56,6 @@ class File{
 }
 
 // const testStaticFn= async(filename) => {
-    
 //     const file= await File.getFile(filename)
 //     // console.log(file)
 //     // console.log(await file.getContent())
@@ -64,8 +63,6 @@ class File{
 // }
 
 // testStaticFn('./myfiles')
-
-
 
 const readDir=async (dirname) => {
     const file= await File.getFile(dirname)
@@ -76,8 +73,6 @@ const test=async (filename) => {
     const result = await readDir(filename)
     console.log(result)
     // console.log(await result[2].getChildren())
-    
-
 }
 
 test('./myfiles')
